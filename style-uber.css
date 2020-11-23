@@ -1,0 +1,214 @@
+body {
+	/*background-image: url("background.jpg");*/
+	font-family: 'Rubik', sans-serif;
+}
+
+header {
+	background-color: black;
+	width: 100%;
+}
+
+.container {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 2%;
+}
+
+.logo-uber {
+	width: 100px;
+}
+
+.logo-calculadora {
+	width: 50px;
+}
+
+.logo ul {
+	display: flex;
+	color: white;
+	align-items: center;
+	font-size: 3em;
+}
+
+.logo li:first-child {
+	font-size: 1.38em;
+	margin-bottom: 10.3%;
+}
+
+.logo li:nth-child(2) {
+	margin-left: -2%;
+}
+
+h1 {
+	text-align: center;
+	font-size: 38px;
+	margin-bottom: 20px;
+	color: #FFFFFF;
+}
+
+h2 {
+	text-align: center;
+	font-size: 22px;
+	color: #FFFFFF;
+}
+
+#foto-motorista{
+	width: 450px;
+}
+
+.foto-motorista {
+	
+	display: flex;
+}
+
+.corpo {
+	display: flex;
+	justify-content: space-around;
+	flex-flow: wrap;
+}
+
+.uber {
+	margin: 10px 47px;
+	background: lightgrey;
+	text-align: center;
+	width: 275px;
+	padding-bottom: 20px;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.uber:hover {
+	transform: scale(1.02);
+	transition: 0.1s;
+	border-color: blue;
+	border: 3px solid blue;
+}
+
+.uber h4 {
+	font-size: 25px;
+	margin: 20px 0px 15px 0;
+}
+
+.valores {
+	margin: 3px 0;
+}
+
+.simule {
+	background-color: #FFFFFF;
+	margin: 20px 10px 0 10px;
+	padding: 10px 0;
+	border-radius: 15px;
+}
+
+.simule-valor {
+	margin: 5px 0 10px;
+	font-weight: bold;
+}
+
+.p-inline {
+	display: inline;
+}
+
+body input {
+	display: inline-block;
+	width: 50px;
+	margin-top: 10px;
+	padding: 3.2px 10px;
+	border-width: 1px;
+	border-radius: 5px;
+}
+
+.input-total {
+	display: block;
+	width: 100px;
+	margin: 10px auto;
+	text-align: center;
+	font-weight: bold;
+}
+
+body button {
+	cursor: pointer;
+	font-weight: bold;
+	border-width: 1.5px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+body button:hover {
+	background-color: darkgrey;
+}
+
+.subtitulo {
+	margin: 10px 0 20px 0;
+	font-size: 12px;
+}
+
+#uber-particular {
+	height:;
+}
+
+#h4-particular {
+	margin: 8.9px 0;
+	padding: 0 0;
+}
+
+.div-particular{
+	width: auto;
+	margin: 0 0;
+}
+
+#valor-particular {
+	margin-bottom: 3px;
+}
+
+#km-particular {
+	margin-top: 1px;
+}
+
+#p-particular {
+	display: inline-block;
+}
+
+.input-particular {
+	display: inline-block;
+	margin: 1.2px 0;
+	width: 60px;
+}
+
+@media (max-width: 1200px) {
+	.container {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		align-items: center;
+		background-image: url(motorista-original.jpg);
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		margin: 3em 0;
+	}
+
+	.logo ul {
+		color: black;
+	}
+
+	#foto-motorista {
+		opacity: 0;
+		width: 100px;
+	}
+
+	.titulo {
+		margin-bottom: 20px;
+	}
+
+	.titulo h1, .titulo h2 {
+	}
+}

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Calculadora Uber</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style-uber.css">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+		
+	</head>
+	<body>
+
+		<header>
+
+			<div class="container">
+				
+				<div class="logo">				
+					<!-- <img class="logo-uber" src="logo_uber.png">-->
+					<ul>
+						<li>u</li>
+						<li>b</li>
+						<li>e</li>
+						<li>r</li>
+					</ul>
+					<img class="logo-calculadora" src="calculadora.png">
+				</div>
+				<div class="titulo">
+					<h1 class="h1">Calcule o valor de uma corrida</h1>
+					<h2>Valores referentes a São Paulo</h2>
+				</div>
+				<div class="foto-motorista" >
+					<img id="foto-motorista" src="motorista.jpg">
+				</div>
+			
+			</div>
+
+		</header>
+
+		<div class="corpo">
+			<div class="uber">
+				<h4>UberX</h4>
+				<p class="valores">Valores:</p>
+				<p class="valores">Km: R$ 1,0501</p>
+				<p class="valores">Base: R$ 1,49</p>
+				<p class="valores">Minuto: R$ 0,195</p>
+				<div class="simule">
+					<p class="simule-valor">Simule o valor da corrida</p>
+					<p class="p-inline">Quantidade de Km's:</p> 
+					<input id="kmX" type="number" step="0.01" required>
+					<p class="p-inline"><br>Tempo médio:</p>
+					<input id="tempoX" type="number" step="0.01" required>
+					<p class="p-inline"><br>Dinâmico*:</p> 
+					<input id="dinamicoX" type="number" step="0.01">
+					<p class="p-inline"><br>Tempo de espera*:</p> 
+					<input id="tempoEsperaX" type="number" step="0.01">
+					<p class="subtitulo">*Campos não obrigatorios</p>
+					<button id="buttonX">Valor da corrida:</button> 
+					<input id="valorCorridaX" class="input-total">
+					<button id="limparX">Limpar valores</button>
+				</div>
+			</div>
+
+			<div class="uber">
+				<h4>Confort</h4>
+				<p class="valores">Valores:</p>
+				<p class="valores">Km: R$ 1,2074</p>
+				<p class="valores">Base: R$ 2,25</p>
+				<p class="valores">Minuto: R$ 0,2475</p>
+				<div class="simule">
+					<p class="simule-valor">Simule o valor da corrida</p>
+					<p class="p-inline">Quantidade de Km's:</p> 
+					<input id="kmConfort" type="number" step="0.01" required>
+					<p class="p-inline"><br>Tempo médio:</p>
+					<input id="tempoConfort" type="number" step="0.01" required>
+					<p class="p-inline"><br>Dinâmico*:</p> 
+					<input id="dinamicoConfort" type="number" step="0.01">
+					<p class="p-inline"><br>Tempo de espera*:</p> 
+					<input id="tempoEsperaConfort" type="number" step="0.01">
+					<p class="subtitulo">*Campos não obrigatorios</p>
+					<button id="buttonConfort">Valor da corrida:</button> 
+					<input id="valorCorridaConfort" class="input-total">
+					<button id="limparConfort">Limpar valores</button>
+				</div>
+			</div>
+
+			<div class="uber">
+				<h4>Bag</h4>
+				<p class="valores">Valores:</p>
+				<p class="valores">Km: R$ 1,26</p>
+				<p class="valores">Base: R$ 2,25</p>
+				<p class="valores">Minuto: R$ 0,22</p>
+				<div class="simule">
+					<p class="simule-valor">Simule o valor da corrida</p>
+					<p class="p-inline">Quantidade de Km's:</p> 
+					<input id="kmBag" type="number" step="0.01" required>
+					<p class="p-inline"><br>Tempo médio:</p>
+					<input id="tempoBag" type="number" step="0.01" required>
+					<p class="p-inline"><br>Dinâmico*:</p> 
+					<input id="dinamicoBag" type="number" step="0.01">
+					<p class="p-inline"><br>Tempo de espera*:</p> 
+					<input id="tempoEsperaBag" type="number" step="0.01">
+					<p class="subtitulo">*Campos não obrigatorios</p>
+					<button id="buttonBag">Valor da corrida:</button> 
+					<input id="valorCorridaBag" class="input-total">
+					<button id="limparBag">Limpar valores</button>
+				</div>
+			</div>
+
+			<div class="uber">
+				<h4>Black</h4>
+				<p class="valores">Valores:</p>
+				<p class="valores">Km: R$ 1,8559</p>
+				<p class="valores">Base: R$ 3,04</p>
+				<p class="valores">Minuto: R$ 0,224</p>
+				<div class="simule">
+					<p class="simule-valor">Simule o valor da corrida</p>
+					<p class="p-inline">Quantidade de Km's:</p> 
+					<input id="kmBlack" type="number" step="0.01" required>
+					<p class="p-inline"><br>Tempo médio:</p>
+					<input id="tempoBlack" type="number" step="0.01" required>
+					<p class="p-inline"><br>Dinâmico*:</p> 
+					<input id="dinamicoBlack" type="number" step="0.01">
+					<p class="p-inline"><br>Tempo de espera*:</p> 
+					<input id="tempoEsperaBlack" type="number" step="0.01">
+					<p class="subtitulo">*Campos não obrigatorios</p>
+					<button id="buttonBlack">Valor da corrida:</button> 
+					<input id="valorCorridaBlack" class="input-total">
+					<button id="limparBlack">Limpar valores</button>
+				</div>
+			</div>
+
+
+			<div id="uber-particular" class="uber">
+				<h4 id="h4-particular">Particular</h4>
+				<p id="valor-particular" class="valores">Valores:</p>
+				<div class="div-particular">
+					<p id="p-particular" class="valores">Km:</p>
+					<input id="km-particular" class="input-particular" type="number" step="0.0001">
+				</div>
+				<div class="div-particular">
+					<p id="p-particular" class="valores">Base:</p>
+					<input id="base-particular" class="input-particular" type="number" step="0.0001">
+				</div>
+				<div class="div-particular">
+					<p id="p-particular" class="valores">Minuto:</p>
+					<input id="minuto-particular" class="input-particular" type="number" step="0.0001">
+				</div>
+				<div class="simule">
+					<p class="simule-valor">Simule o valor da corrida</p>
+					<p class="p-inline">Quantidade de Km's:</p> 
+					<input id="kmParticular" type="number" step="0.01" required>
+					<p class="p-inline"><br>Tempo médio:</p>
+					<input id="tempoParticular" type="number" step="0.01" required>
+					<p class="p-inline"><br>Dinâmico*:</p> 
+					<input id="dinamicoParticular" type="number" step="0.01">
+					<p class="p-inline"><br>Tempo de espera*:</p> 
+					<input id="tempoEsperaParticular" type="number" step="0.01">
+					<p class="subtitulo">*Campos não obrigatorios</p>
+					<button id="buttonParticular">Valor da corrida:</button> 
+					<input id="valorCorridaParticular" class="input-total">
+					<button id="limparParticular">Limpar valores</button>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>
+
+<script>
+
+	function valorcorrida(base, km, valorKm, tempo, valorTempo, tempoEspera, valorTempoEspera, dinamico){
+
+		var total = (base + (km * valorKm) + (tempo * valorTempo) + (tempoEspera * valorTempoEspera)) * dinamico;
+
+		return total;
+	}
+
+	function soma(precoBase, inputKm, inputTempo, inputTempoEspera, inputDinamico, precoKm, precoTempo, precoTempoEspera, inputValorCorrida){
+
+		var km = document.getElementById(inputKm).value;
+		var tempo = document.getElementById(inputTempo).value;
+		var tempoEspera = document.getElementById(inputTempoEspera).value;
+		var dinamico = document.getElementById(inputDinamico).value;
+
+		if(dinamico == 0){
+			dinamico = 1
+		}
+
+		var valorTotal = Math.round(valorcorrida(precoBase, km, precoKm, tempo, precoTempo, tempoEspera, precoTempoEspera, dinamico)*100)/100;
+
+		return document.getElementById(inputValorCorrida).value = "R$ " + valorTotal;
+
+	}
+
+	function limpa(inputKm, inputTempo, inputDinamico, inputTempoEspera, inputValorCorrida) {
+		
+		document.getElementById(inputKm).value = "";
+		document.getElementById(inputTempo).value = "";
+		document.getElementById(inputDinamico).value = "";
+		document.getElementById(inputTempoEspera).value = "";
+		document.getElementById(inputValorCorrida).value = "";
+	}
+
+
+
+	/*###################################_uberX_###################################*/
+
+	function valorCorridaUberX(){
+		soma(1.5, "kmX", "tempoX", "tempoEsperaX", "dinamicoX", 1.05, 0.195, 0.195, "valorCorridaX")
+	}
+
+	var buttonX = document.getElementById("buttonX");
+	buttonX.onclick = valorCorridaUberX;
+
+	function limpaInputX(){
+		limpa("kmX", "tempoX", "dinamicoX", "tempoEsperaX", "valorCorridaX")
+	}
+
+	var limparX = document.getElementById("limparX");
+	limparX.onclick = limpaInputX;
+
+	/*###################################_uberConfort_###################################*/
+
+	function valorCorridaConfort(){
+		soma(2.25, "kmConfort", "tempoConfort", "tempoEsperaConfort", "dinamicoConfort", 1.2074, 0.2475, 0.2475, "valorCorridaConfort");
+	}
+
+	var buttonConfort = document.getElementById("buttonConfort");
+	buttonConfort.onclick = valorCorridaConfort;
+
+	function limpaInputConfort(){
+		limpa("kmConfort", "tempoConfort", "tempoEsperaConfort", "dinamicoConfort", "valorCorridaConfort");
+	}
+
+	var limparConfort = document.getElementById("limparConfort");
+	limparConfort.onclick = limpaInputConfort;
+
+	/*###################################_uberBag_###################################*/
+
+	function valorCorridaBag(){
+		soma(2.25, "kmBag", "tempoBag", "tempoEsperaBag", "dinamicoBag", 1.26, 0.22, 0.22, "valorCorridaBag");
+	}
+
+	var buttonBag = document.getElementById("buttonBag");
+	buttonBag.onclick = valorCorridaBag;
+
+	function limpaInputBag(){
+		limpa("kmBag", "tempoBag", "tempoEsperaBag", "dinamicoBag", "valorCorridaBag");
+	}
+
+	var limparBag = document.getElementById("limparBag");
+	limparBag.onclick = limpaInputBag;
+
+	/*###################################_uberBlack_###################################*/
+
+	function valorCorridaBlack(){
+		soma(3.04, "kmBlack", "tempoBlack", "tempoEsperaBlack", "dinamicoBlack", 1.8559, 0.224, 0.224, "valorCorridaBlack");
+	}
+
+	var buttonBlack = document.getElementById("buttonBlack");
+	buttonBlack.onclick = valorCorridaBlack;
+
+	function limpaInputBlack(){
+		limpa("kmBlack", "tempoBlack", "tempoEsperaBlack", "dinamicoBlack", "valorCorridaBlack");
+	}
+
+	var limparBlack = document.getElementById("limparBlack");
+	limparBlack.onclick = limpaInputBlack;
+
+	/*###################################_particular_###################################*/
+
+	function valorCorridaParticular(){
+		
+		var kilometro = parseFloat(document.getElementById("km-particular").value);
+		var base = parseFloat(document.getElementById("base-particular").value);
+		var minuto = parseFloat(document.getElementById("minuto-particular").value);
+		
+		soma(base, "kmParticular", "tempoParticular", "tempoEsperaParticular", "dinamicoParticular", kilometro, minuto, minuto, "valorCorridaParticular");
+	}
+
+	var buttonParticular = document.getElementById("buttonParticular");
+	buttonParticular.onclick = valorCorridaParticular;
+
+	function limpaInputParticular(){
+		limpa("kmParticular", "tempoParticular", "tempoEsperaParticular", "dinamicoParticular", "valorCorridaParticular");
+	}
+
+	var limparParticular = document.getElementById("limparParticular");
+	limparParticular.onclick = limpaInputParticular;
+</script>
