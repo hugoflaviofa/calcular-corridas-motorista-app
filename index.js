@@ -31,12 +31,40 @@ function limpa(inputKm, inputTempo, inputDinamico, inputTempoEspera, inputValorC
     document.getElementById(inputValorCorrida).value = "";
 }
 
+// ############################################################################
 
+let uberX = {
+    valorBase: 1.5,
+    valorKm: 1.05,
+    valorMinuto: 0.195,
+    valorMinEspera: 0.195
+}   
+
+let uberConfort = {
+    valorBase: 2.25,
+    valorKm: 1.2074,
+    valorMinuto: 0.2475,
+    valorMinEspera: 0.2475
+}
+
+let uberBag = {
+    valorBase: 2.25,
+    valorKm: 1.26,
+    valorMinuto: 0.22,
+    valorMinEspera: 0.22
+}
+
+let uberBlack = {
+    valorBase: 3.04,
+    valorKm: 1.8559,
+    valorMinuto: 0.224,
+    valorMinEspera: 0.224
+}
 
 //###################################_uberX_###################################
 
 function valorCorridaUberX(){
-    soma(1.5, "kmX", "tempoX", "tempoEsperaX", "dinamicoX", 1.05, 0.195, 0.195, "valorCorridaX")
+    soma(uberX.valorBase, "kmX", "tempoX", "tempoEsperaX", "dinamicoX", uberX.valorKm, uberX.valorMinuto, uberX.valorMinEspera, "valorCorridaX")
 }
 
 var buttonX = document.getElementById("buttonX");
@@ -52,7 +80,7 @@ limparX.onclick = limpaInputX;
 //###################################_uberConfort_###################################
 
 function valorCorridaConfort(){
-    soma(2.25, "kmConfort", "tempoConfort", "tempoEsperaConfort", "dinamicoConfort", 1.2074, 0.2475, 0.2475, "valorCorridaConfort");
+    soma(uberConfort.valorBase, "kmConfort", "tempoConfort", "tempoEsperaConfort", "dinamicoConfort", uberConfort.valorKm, uberConfort.valorMinuto, uberConfort.valorMinEspera, "valorCorridaConfort");
 }
 
 var buttonConfort = document.getElementById("buttonConfort");
@@ -68,7 +96,7 @@ limparConfort.onclick = limpaInputConfort;
 //###################################_uberBag_###################################
 
 function valorCorridaBag(){
-    soma(2.25, "kmBag", "tempoBag", "tempoEsperaBag", "dinamicoBag", 1.26, 0.22, 0.22, "valorCorridaBag");
+    soma(uberBag.valorBase, "kmBag", "tempoBag", "tempoEsperaBag", "dinamicoBag", uberBag.valorKm, uberBag.valorMinuto, uberBag.valorMinEspera, "valorCorridaBag");
 }
 
 var buttonBag = document.getElementById("buttonBag");
@@ -84,7 +112,7 @@ limparBag.onclick = limpaInputBag;
 //###################################_uberBlack_###################################
 
 function valorCorridaBlack(){
-    soma(3.04, "kmBlack", "tempoBlack", "tempoEsperaBlack", "dinamicoBlack", 1.8559, 0.224, 0.224, "valorCorridaBlack");
+    soma(uberBlack.valorBase, "kmBlack", "tempoBlack", "tempoEsperaBlack", "dinamicoBlack", uberBlack.valorKm, uberBlack.valorMinuto, uberBlack.valorMinEspera, "valorCorridaBlack");
 }
 
 var buttonBlack = document.getElementById("buttonBlack");
